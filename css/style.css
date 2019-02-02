@@ -101,6 +101,79 @@
 .sidenav .circle-button .circle-button-content .circle-icon img {
   width: 24px;
 }
+.sidenav .modal-search {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(40, 40, 40, 0.97);
+  position: fixed;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+}
+.sidenav .modal-search .modal-search-content {
+  clear: both;
+  width: 100%;
+  float: left;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.sidenav .modal-search .modal-search-content .modal-close {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/cancel.svg");
+  background-size: 20px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  padding: 0;
+  cursor: pointer;
+}
+.sidenav .modal-search .modal-search-content .form-search {
+  clear: both;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.sidenav .modal-search .modal-search-content .form-search input {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: #FFFFFF !important;
+  z-index: 9999;
+  padding: 20px 120px 20px 20px;
+}
+.sidenav .modal-search .modal-search-content .form-search .search-input {
+  clear: none;
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+}
+.sidenav .modal-search .modal-search-content .form-search .search-submit {
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 120px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.sidenav .modal-search .active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
 
 .navigation {
   top: 0;
