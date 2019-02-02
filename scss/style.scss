@@ -15,6 +15,14 @@ $bg-ambient: #EBEBEB;
     position: fixed;
     z-index: 9999;
 
+    @media screen and (max-width: 760px) {
+        clear: both;
+        width: 100%;
+        float: left;
+        height: 60px;
+        z-index: 999;
+    }
+
     // Logo
     #sidenav__logo {
         float: left;
@@ -22,6 +30,18 @@ $bg-ambient: #EBEBEB;
         width: 100%;
         position: relative;
         padding: 20px 15px;
+
+        @media screen and (max-width: 760px) {
+            clear: none;
+            float: left;
+            text-align: center;
+            width: 50px;
+            display: flex;
+            position: absolute;
+            left: 20px;
+            padding: 15px 0;
+            height: 100%;
+        }
 
         img {
             width: 100%;
@@ -42,6 +62,19 @@ $bg-ambient: #EBEBEB;
         justify-content: center;
         padding: 20px 15px;
         cursor: pointer;
+
+        @media screen and (max-width: 760px) {
+            clear: none;
+            float: left;
+            width: 15%;
+            text-align: center;
+            display: flex;
+            position: absolute;
+            right: 0;
+            padding: 20px 15px;
+            cursor: pointer;
+            height: 100%;
+        }
 
         #bar {
             width: 100%;

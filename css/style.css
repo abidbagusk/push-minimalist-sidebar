@@ -9,12 +9,34 @@
   position: fixed;
   z-index: 9999;
 }
+@media screen and (max-width: 760px) {
+  .sidenav {
+    clear: both;
+    width: 100%;
+    float: left;
+    height: 60px;
+    z-index: 999;
+  }
+}
 .sidenav #sidenav__logo {
   float: left;
   height: auto;
   width: 100%;
   position: relative;
   padding: 20px 15px;
+}
+@media screen and (max-width: 760px) {
+  .sidenav #sidenav__logo {
+    clear: none;
+    float: left;
+    text-align: center;
+    width: 50px;
+    display: flex;
+    position: absolute;
+    left: 20px;
+    padding: 15px 0;
+    height: 100%;
+  }
 }
 .sidenav #sidenav__logo img {
   width: 100%;
@@ -32,6 +54,20 @@
   justify-content: center;
   padding: 20px 15px;
   cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+  .sidenav #sidenav__menu {
+    clear: none;
+    float: left;
+    width: 15%;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 20px 15px;
+    cursor: pointer;
+    height: 100%;
+  }
 }
 .sidenav #sidenav__menu #bar {
   width: 100%;
