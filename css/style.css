@@ -51,10 +51,10 @@
   background: #000;
   position: absolute;
   left: 0;
+  transition: 0.5s;
 }
 .sidenav #sidenav__menu #bar .bars:nth-child(1) {
   top: 0;
-  transition-delay: 0.3s;
 }
 .sidenav #sidenav__menu #bar .bars:nth-child(2) {
   top: 50%;
@@ -62,7 +62,14 @@
 }
 .sidenav #sidenav__menu #bar .bars:nth-child(3) {
   bottom: 0;
-  transition-delay: 0.3s;
+}
+.sidenav #sidenav__menu #bar:hover .bars:nth-child(1) {
+  transform: translateY(5px);
+  transition: 0.5s;
+}
+.sidenav #sidenav__menu #bar:hover .bars:nth-child(3) {
+  transform: translateY(-5px);
+  transition: 0.5s;
 }
 .sidenav #search-button {
   position: absolute;

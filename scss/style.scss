@@ -61,11 +61,12 @@ $bg-ambient: #EBEBEB;
                 background: #000;
                 position: absolute;
                 left: 0;
+                transition: .5s;
             }
 
             .bars:nth-child(1) {
                 top: 0;
-                transition-delay: .3s;
+
             }
 
             .bars:nth-child(2) {
@@ -75,9 +76,20 @@ $bg-ambient: #EBEBEB;
 
             .bars:nth-child(3) {
                 bottom: 0;
-                transition-delay: .3s;
+
             }
         }
+
+        #bar:hover .bars:nth-child(1) {
+            transform: translateY(5px);
+            transition: .5s;
+        }
+
+        #bar:hover .bars:nth-child(3) {
+            transform: translateY(-5px);
+            transition: .5s;
+        }
+
     }
 
     // Search
