@@ -30,7 +30,7 @@
     clear: none;
     float: left;
     text-align: center;
-    width: 50px;
+    width: 40px;
     display: flex;
     position: absolute;
     left: 20px;
@@ -224,11 +224,22 @@
   overflow: auto;
   padding: 0px;
 }
+@media screen and (max-width: 760px) {
+  .navigation {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+}
 
 .toggle-nav {
   width: 400px;
   padding: 20px 40px;
   transition: 0.8s ease-in-out;
+}
+@media screen and (max-width: 760px) {
+  .toggle-nav {
+    width: 460px;
+  }
 }
 
 .navigation-active {
@@ -237,6 +248,11 @@
   visibility: visible;
   transition: cubic-bezier(0.32, 0.75, 0, 1) 0.8s;
   transition-delay: 0.3s;
+}
+@media screen and (max-width: 760px) {
+  .navigation-active {
+    left: 0px;
+  }
 }
 .navigation-active #navigation-content {
   margin: 60px 0 20px;

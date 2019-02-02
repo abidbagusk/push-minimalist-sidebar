@@ -35,7 +35,7 @@ $bg-ambient: #EBEBEB;
             clear: none;
             float: left;
             text-align: center;
-            width: 50px;
+            width: 40px;
             display: flex;
             position: absolute;
             left: 20px;
@@ -259,6 +259,10 @@ $bg-ambient: #EBEBEB;
     overflow: auto;
     padding: 0px;
 
+    @media screen and (max-width: 760px) {
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
 }
 
 // Navigation Toggle
@@ -267,6 +271,9 @@ $bg-ambient: #EBEBEB;
     padding: 20px 40px;
     transition: .8s ease-in-out;
 
+    @media screen and (max-width: 760px) {
+        width: 460px;
+    }
 }
 
 .navigation-active {
@@ -275,6 +282,11 @@ $bg-ambient: #EBEBEB;
     visibility: visible;
     transition: cubic-bezier(0.32, 0.75, 0, 1) 0.8s;
     transition-delay: .3s;
+
+    @media screen and (max-width: 760px) {
+        left: 0px;
+
+    }
 
     #navigation-content {
         margin: 60px 0 20px;
