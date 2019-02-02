@@ -21,17 +21,48 @@
   height: 100%;
 }
 .sidenav #sidenav__menu {
+  clear: both;
+  width: 100%;
+  float: left;
   position: relative;
   height: auto;
-  text-align: center;
+  padding-right: 3.333%;
+  padding-left: 3.333%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  cursor: pointer;
 }
 .sidenav #sidenav__menu #bar {
+  width: 100%;
+  clear: both;
+  float: left;
+  text-align: center;
+  display: flex;
   height: 16px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
 }
 .sidenav #sidenav__menu #bar .bars {
+  clear: both;
   width: 100%;
+  float: left;
   height: 2px;
   background: #000;
+  position: absolute;
+  left: 0;
+}
+.sidenav #sidenav__menu #bar .bars:nth-child(1) {
+  top: 0;
+  transition-delay: 0.3s;
+}
+.sidenav #sidenav__menu #bar .bars:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidenav #sidenav__menu #bar .bars:nth-child(3) {
+  bottom: 0;
+  transition-delay: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */

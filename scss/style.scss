@@ -15,6 +15,7 @@ $bg-ambient: #EBEBEB;
     position: fixed;
     z-index: 9999;
 
+    // Logo
     #sidenav__logo {
         float: left;
         height: auto;
@@ -28,18 +29,53 @@ $bg-ambient: #EBEBEB;
         }
     }
 
+    // Menu Bar
     #sidenav__menu {
+        clear: both;
+        width: 100%;
+        float: left;
         position: relative;
         height: auto;
-        text-align: center;
+        padding-right: 3.333%;
+        padding-left: 3.333%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 15px;
+        cursor: pointer;
 
         #bar {
+            width: 100%;
+            clear: both;
+            float: left;
+            text-align: center;
+            display: flex;
             height: 16px;
+            transition: all .2s ease-in-out;
+            position: relative;
 
             .bars {
+                clear: both;
                 width: 100%;
+                float: left;
                 height: 2px;
                 background: #000;
+                position: absolute;
+                left: 0;
+            }
+
+            .bars:nth-child(1) {
+                top: 0;
+                transition-delay: .3s;
+            }
+
+            .bars:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .bars:nth-child(3) {
+                bottom: 0;
+                transition-delay: .3s;
             }
         }
     }
