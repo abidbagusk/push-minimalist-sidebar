@@ -64,5 +64,35 @@
   bottom: 0;
   transition-delay: 0.3s;
 }
+.sidenav #search-button {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  width: 100%;
+}
+.sidenav .circle-button {
+  cursor: pointer;
+  height: 50px;
+  margin: 0;
+  z-index: 9999;
+}
+.sidenav .circle-button .circle-button-content {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 10px 0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+}
+.sidenav .circle-button .circle-button-content .circle-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.sidenav .circle-button .circle-button-content .circle-icon img {
+  width: 24px;
+}
 
 /*# sourceMappingURL=style.css.map */
