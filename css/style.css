@@ -10,14 +10,28 @@
   z-index: 9999;
 }
 .sidenav #sidenav__logo {
+  float: left;
+  height: auto;
   width: 100%;
   position: relative;
-  left: 6px;
-  top: 10px;
-  margin: 0;
+  padding: 20px 15px;
 }
 .sidenav #sidenav__logo img {
-  width: 50px;
+  width: 100%;
+  height: 100%;
+}
+.sidenav #sidenav__menu {
+  position: relative;
+  height: auto;
+  text-align: center;
+}
+.sidenav #sidenav__menu #bar {
+  height: 16px;
+}
+.sidenav #sidenav__menu #bar .bars {
+  width: 100%;
+  height: 2px;
+  background: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
