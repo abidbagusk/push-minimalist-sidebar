@@ -95,9 +95,9 @@
   width: 24px;
 }
 
-#navigation {
+.navigation {
   top: 0;
-  width: 400px;
+  width: 0px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -106,7 +106,13 @@
   z-index: 99999;
   background: #EBEBEB;
   overflow: auto;
+  padding: 0px;
+}
+
+.toggle-nav {
+  width: 400px;
   padding: 20px 40px;
+  transition: 0.8s ease-in-out;
 }
 
 .navigation-active {

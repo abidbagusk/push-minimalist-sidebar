@@ -118,9 +118,9 @@ $bg-ambient: #EBEBEB;
 }
 
 // Navigation Content
-#navigation {
+.navigation {
     top: 0;
-    width: 400px;
+    width: 0px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -129,7 +129,16 @@ $bg-ambient: #EBEBEB;
     z-index: 99999;
     background: $bg-ambient;
     overflow: auto;
+    padding: 0px;
+
+}
+
+// Navigation Toggle
+.toggle-nav {
+    width: 400px;
     padding: 20px 40px;
+    transition: .8s ease-in-out;
+
 }
 
 .navigation-active {
