@@ -138,7 +138,7 @@ $bg-ambient: #EBEBEB;
         height: 100vh;
         background-color: rgba(40, 40, 40, 0.97);
         position: fixed;
-        z-index: 99999;
+        z-index: 9999999;
         opacity: 0;
         visibility: hidden;
 
@@ -203,12 +203,12 @@ $bg-ambient: #EBEBEB;
                 }
             }
         }
+    }
 
-        .active {
-            visibility: visible;
-            opacity: 1;
-            transition: .5s ease-in-out;
-        }
+    .active {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in-out;
     }
 }
 
@@ -221,7 +221,7 @@ $bg-ambient: #EBEBEB;
     flex-direction: column;
     justify-content: flex-start;
     position: fixed;
-    z-index: 99999;
+    z-index: 99;
     background: $bg-ambient;
     overflow: auto;
     padding: 0px;

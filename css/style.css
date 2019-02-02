@@ -110,7 +110,7 @@
   height: 100vh;
   background-color: rgba(40, 40, 40, 0.97);
   position: fixed;
-  z-index: 99999;
+  z-index: 9999999;
   opacity: 0;
   visibility: hidden;
 }
@@ -169,7 +169,7 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
-.sidenav .modal-search .active {
+.sidenav .active {
   visibility: visible;
   opacity: 1;
   transition: 0.5s ease-in-out;
@@ -183,7 +183,7 @@
   flex-direction: column;
   justify-content: flex-start;
   position: fixed;
-  z-index: 99999;
+  z-index: 99;
   background: #EBEBEB;
   overflow: auto;
   padding: 0px;
