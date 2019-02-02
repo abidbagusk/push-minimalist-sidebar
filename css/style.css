@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 
+.sidenav {
+  width: 60px;
+  height: 100vh;
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.12);
+  position: fixed;
+  z-index: 9999;
+}
 
 /*# sourceMappingURL=style.css.map */
