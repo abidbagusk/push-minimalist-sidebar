@@ -9,5 +9,14 @@
   position: fixed;
   z-index: 9999;
 }
+.sidenav #sidenav__logo {
+  width: 100%;
+  position: relative;
+  left: 6px;
+  top: 10px;
+}
+.sidenav #sidenav__logo img {
+  width: 50px;
+}
 
 /*# sourceMappingURL=style.css.map */

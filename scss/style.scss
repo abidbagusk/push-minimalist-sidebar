@@ -14,4 +14,15 @@ $bg-ambient: #EBEBEB;
     box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.12);
     position: fixed;
     z-index: 9999;
+
+    #sidenav__logo {
+        width: 100%;
+        position: relative;
+        left: 6px;
+        top: 10px;
+
+        img {
+            width: 50px;
+        }
+    }
 }
