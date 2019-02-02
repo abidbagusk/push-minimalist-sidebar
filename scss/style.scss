@@ -116,3 +116,26 @@ $bg-ambient: #EBEBEB;
         }
     }
 }
+
+// Navigation Content
+#navigation {
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 99999;
+    background: $bg-ambient;
+    overflow: auto;
+    padding: 20px 40px;
+}
+
+.navigation-active {
+    left: 60px;
+    opacity: 1;
+    visibility: visible;
+    transition: cubic-bezier(0.32, 0.75, 0, 1) 0.8s;
+    transition-delay: .3s;
+}
