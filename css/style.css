@@ -116,5 +116,31 @@
   transition: cubic-bezier(0.32, 0.75, 0, 1) 0.8s;
   transition-delay: 0.3s;
 }
+.navigation-active #navigation-content {
+  margin: 60px 0 20px;
+  clear: both;
+  width: 100%;
+  float: left;
+  list-style-type: none;
+}
+.navigation-active #navigation-content li {
+  margin-bottom: 15px;
+}
+.navigation-active #navigation-content li a {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #282828;
+  transition: 0.3s;
+}
+.navigation-active #navigation-content li a:hover {
+  color: lightblue;
+  transition: 0.3s;
+  letter-spacing: 3px;
+}
+.navigation-active #navigation-content li .list-active {
+  color: lightblue;
+}
 
 /*# sourceMappingURL=style.css.map */
